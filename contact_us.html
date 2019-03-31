@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Source Log</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="contact.css">
+        <script language=javascript>
+            function send_email(content){
+                location="mailto:u6130064@anu.edu.au?subject=contact&body=" + content;
+            }
+        </script>
     </head>
     <body>
         <nav class="top_nav">
@@ -19,25 +26,14 @@
                 </ul>
             </div>
         </nav>
-        <h1 align="center" style="padding-top:1.5em;">Sources Log</h1>
-        <table border="1" align="center" cellpadding="1" cellspacing="1">
-        <tbody>
-            <tr> 
-            <td> 
-                <div align="center">Original</div></td>
-            <td> 
-                <div align="center">Type</div></td>
-            <td> 
-                <div align="center">How Altered or Justification</div></td>
-            </tr>
-            <tr> 
-            <td>
-                    <a href="https://pixabay.com/illustrations/welcome-words-greeting-language-905562/">Logo (License CC0)</a>
-            </td>
-            <td>graphic</td>
-            <td>From Tumisu, Picabay</td>
-            </tr>
-        </tbody>
-        </table>
+        <form class="submit" name='sendmail' action='mailto:u6130064@anu.edu.com'>
+            <span>Comment:</span><br>
+            <textarea name="body" id="comments" rows="8" cols="50">your comments</textarea>
+            <br><br>
+            <span>Subject:</span><br>
+            <input type="text" name="subject" value="comment">
+            <br><br>
+            <input type="submit" value="submit">
+        </form> 
     </body>
 </html>
